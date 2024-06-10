@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Freckle+Face&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+:root {
+  --green: #4ca86f;
+  --yellow: #fff4a3;
+  --black: #292a35;
+  --pink: #ffc0c7;
+  --yellow-hover: #fdf169;
+  --pink-hover: #eea8b0;
+  --bg-green: #d9eee1;
+  --bg-pink: #f3ecea;
+  --bg-whiteblue: #96d4d4;
+  --card-bg: #e7e9eb;
+  --anjay: #282a35;
+}
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  background-color: #282A35;
+  z-index: 1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: inline-block;
+  width: auto;
+  margin: 0 !important;
+  padding: 5px 15px 5px 15px !important;
+  font-size: 15px !important;
+  text-decoration: none;
+  line-height: 1.5;
+  color: #f1f1ff;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: black;
+  color: #ddd;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #000;
+}
+/* ******************************************************** */
+
+/* Background Color Classes */
+.background-black {
+  background-color: var(--black);
+}
+.background-green {
+  background-color: var(--bg-green);
+}
+.background-yellow {
+  background-color: var(--yellow);
+}
+.background-whitepink {
+  background-color: var(--bg-pink);
+}
+.background-pink {
+  background-color: var(--pink);
+}
+.background-whiteblue {
+  background-color: var(--bg-whiteblue);
+}
+/* ******************************************************** */
+
+/* Button Color Classes */
+.pink-btn {
+  background-color: var(--pink);
+}
+.pink-btn:hover {
+  background-color: var(--pink-hover) !important;
+}
+.yellow-btn {
+  background-color: var(--yellow);
+}
+.yellow-btn:hover {
+  background-color: var(--yellow-hover) !important;
+}
+/* ******************************************************** */
+
+/* Navbar Styles */
+.headnav {
+  position: sticky;
+}
+.nav-link,
+.drop-menu {
+  color: #000;
+  padding: 1.4rem 0;
+  /* font-size: 1.1rem; */
+  /* font-weight: 600; */
+}
+.nav-link:hover,
+.drop-menu:hover {
+  color: #fff !important;
+  background-color: var(--green);
+}
+.drop-menu:hover {
+  border-radius: 0;
+}
+.dropdown-item:hover {
+  background-color: var(--green);
+  color: var(--card-bg);
+}
+
+.sign {
+  color: #333;
+  background-color: #D9EEE1;
+  border-radius: 25px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+
+/* ***************************************************** */
+
+.landing-para {
+  color: var(--pink);
+}
+#search-box {
+  border-radius: 50rem 0 0 50rem;
+  border-color: transparent;
+  box-shadow: none;
+}
+#button-addon2 {
+  border-radius: 0 50rem 50rem 0;
+}
+/* ***************************************************** */
+
+.lang-example .main-title {
+  font-size: 6.5rem;
+}
+.lang-example .card {
+  background-color: var(--card-bg);
+}
+.lang-example .card-text {
+  background-color: #fff;
+  border-left: 4px solid var(--green);
+  min-height: 19rem;
+  font-size: 0.94rem;
+  font-family: monospace;
+}
+
+.js-title {
+  font-size: 4.4rem;
+}
+.python-title,
+.sql-title {
+  font-size: 5rem;
+}
+
+/* ******************************************************** */
+
+.codeeditorbr-container {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width: 60%;
+  margin-left: 22%;
+}
+
+.codeeditorbr-row {
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;        
+  border-top-right-radius: 4px;
+}
+
+.codeeditorbr-column {    
+  float: left;
+}
+
+.codeeditorbr-left {
+  width: 20%;
+} 
+.codeeditorbr-middle {
+  width: 80%;
+}
+
+
+.codeeditorbr-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.codeeditorbr-dot {
+  margin-top: 5px;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.codeeditorbr-input {
+  width: 80%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 22px;
+  color: #666;
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* ******************************************************** */
+
+.kickstart-cert-arrow{
+  margin-left: 40%;
+  right: 200px;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: -50px;
+  z-index: 1;
+}
+
+/* ******************************************************** */
+.card-body h3 {
+  cursor: pointer;
+}
+
+.game-section h1,
+.game-section h2 {
+  font-family: "Freckle Face", cursive;
+}
+.quiz-section {
+  background: #232632;
+}
+
+.footer-links:hover {
+  color: var(--green) !important;
+}
+
+/* FOLLOW US */
+.image-container{
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between; /* Mengatur jarak yang merata antara gambar */
+}
+
+/* END MAIN (FOOTER) */
+.footer{
+  padding: 32px;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+.footer .contain2{
+  color: #000!important;
+  background-color: #fff!important;
+}
+.footer button{
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+/* Gaya dasar untuk mengatur tampilan */
+.contain {
+  display: flex; /* Gunakan display: flex untuk kompatibilitas yang lebih baik */
+  justify-content: space-between; /* Menempatkan elemen-elemen pada ruang yang sama di antara */
+  align-items: center; /* Mengatur elemen-elemen secara vertikal pada tengah container */
+  width: 100%; 
+}
+.footer h2{
+  white-space: nowrap;
+  text-decoration: none; 
+  margin-top: 1px; 
+  margin-bottom: 1px; 
+  font-size: 17px; 
+  font-family: Source Sans Pro, sans-serif;
+  color: white;
+}
+
+.box1 {
+  width: 300px; /* Mengatur lebar masing-masing kotak sehingga ada empat dalam satu baris */
+  line-height: 1.5;
+  margin-right: 20px;
+}
+
+.isi {
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* FOOTER MENU */
+.menu-footer{
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding-top:40px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.menu-footer a{
+  color: black;
+  text-decoration: none;
+}
+.menu-footer a:hover{
+  color: #04AA6D;
+  text-decoration: underline;
+}
+
+
+/* FOOTER AKHIR */
+.end{
+  width: 95%;
+  margin-left: 3%;
+  font-family: Verdana,sans-serif;
+  font-size: 12px!important;
+  opacity: 0.60;
+  line-height: 1.5;
+}
